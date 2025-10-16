@@ -59,12 +59,8 @@ import { isAuthorEnvironment } from './scripts.js';
 
 
 /**
- * Extracts the site name from the current URL pathname
- * @description Extracts the site name from paths following the pattern /content/site-name/...
- * For example:
- * - From "/content/wknd-universal/language-masters/en/path" returns "wknd-universal"
- * - From "/content/wknd-universal/language-masters/en/path/to/content.html" returns "wknd-universal"
- * @returns {string} The site name extracted from the path, or empty string if not found
+ * fetches the hostname from the placeholders file
+ * @returns {string} The hostname extracted from the path, or empty string if not found
  */
 export async function getHostname() {
   try {
@@ -75,6 +71,23 @@ export async function getHostname() {
     }
   } catch (error) {
     console.warn('Error fetching placeholders for hostname:', error);
+  }
+}
+
+/**
+ * fetches the experimentation enablement check from the placeholders file
+ * @returns {boolean} True if experimentation is enabled, false otherwise
+ */
+export async function getExperimentationCheck() {
+  try {
+      const listOfAllPlaceholdersData = await fetchPlaceholders();
+      const experimentation = listOfAllPlaceholdersData?.experimentation;
+      if (experimentation) {
+        return experimentation === 'true' ? true : false;
+      }
+  } catch (error) {
+    console.warn('Error fetching placeholders for experimentation:', error);
+    return false;
   }
 }
 
