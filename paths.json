@@ -1,22 +1,22 @@
 {
   "mappings": [
-    "/content/sample-site/language-masters/en:/",
-    "/content/sample-site/language-masters/en/:/en/",
-    "/content/sample-site/language-masters/fr/:/fr/",
-    "/content/sample-site/language-masters/fr:/fr",
-    "/content/sample-site/language-masters/es/:/es/",
-    "/content/sample-site/language-masters/es:/es",
-    "/content/sample-site/language-masters/ja/:/ja/",
-    "/content/sample-site/language-masters/ja:/ja",
-    "/content/sample-site/language-masters/de/:/de/",
-    "/content/sample-site/language-masters/de:/de",
-    "/content/sample-site/configuration:/.helix/config.json",
-    "/content/sample-site/metadata:/metadata.json",
-    "/content/sample-site/redirects:/redirects.json",
-    "/content/sample-site/placeholders:/placeholders.json"
+    "/content/sample-site-04/language-masters/en:/",
+    "/content/sample-site-04/language-masters/en/:/en/",
+    "/content/sample-site-04/language-masters/fr/:/fr/",
+    "/content/sample-site-04/language-masters/fr:/fr",
+    "/content/sample-site-04/language-masters/es/:/es/",
+    "/content/sample-site-04/language-masters/es:/es",
+    "/content/sample-site-04/language-masters/ja/:/ja/",
+    "/content/sample-site-04/language-masters/ja:/ja",
+    "/content/sample-site-04/language-masters/de/:/de/",
+    "/content/sample-site-04/language-masters/de:/de",
+    "/content/sample-site-04/configuration:/.helix/config.json",
+    "/content/sample-site-04/metadata:/metadata.json",
+    "/content/sample-site-04/redirects:/redirects.json",
+    "/content/sample-site-04/placeholders:/placeholders.json"
   ],
   "includes": [
-    "/content/sample-site/",
-    "/content/dam/sample-site/"
+    "/content/sample-site-04/",
+    "/content/dam/sample-site-04/"
   ]
 }
